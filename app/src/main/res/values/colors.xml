@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    //menu lateral
+    <color name="purple_200">#FBFBFB</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#009846</color>
+
+
+
+    //login-registro
+    <color name="colorPrimary">#009846</color>
+    <color name="colorAccent">#ffff</color>
+
+
+
+</resources>

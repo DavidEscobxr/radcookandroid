@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "754069036527",
+    "project_id": "radcook-splash",
+    "storage_bucket": "radcook-splash.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:754069036527:android:cd7c8280c5de8b05442a1a",
+        "android_client_info": {
+          "package_name": "com.example.radcooksplash"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMnAFGmGhhU4fU05ULYztTUx9jMgE0sr0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EnterRecipe">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Crea Tu Receta"
+        android:textColor="@color/colorPrimary"
+        android:textSize="34sp" />
+
+    <EditText
+        android:id="@+id/nameRecipe"
+        android:layout_width="wrap_content"
+        android:layout_height="64dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="69dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="203dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:hint="Nombre de la receta"
+        android:inputType="text"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="248dp" />
+
+    <ImageView
+        android:id="@+id/gifImageView4"
+        android:layout_width="157dp"
+        android:layout_height="166dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginBottom="19dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/registrogif"
+        tools:ignore="MissingConstraints" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+        android:layout_width="296dp"
+        android:layout_height="124dp"
+        android:layout_below="@+id/title"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="45dp">
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteRecipe"
+            android:layout_width="237dp"
+            android:layout_height="74dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:hint="Tipo De Categoria"
+            android:inputType="none" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <EditText
+        android:id="@+id/createIngredientes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="73dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="203dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:hint="Descripcion de tu receta"
+        android:inputType="text"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="248dp" />
+
+    <EditText
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="73dp"
+        android:layout_marginTop="380dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginBottom="203dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:hint="Detalles"
+        android:inputType="text"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="248dp" />
+
+    <Button
+        android:id="@+id/crearButton"
+        android:layout_width="188dp"
+        android:layout_height="79dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="205dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="55dp"
+        android:backgroundTint="#009846"
+        android:textColor="@color/colorAccent"
+        android:text="Crea Tu Receta"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-52dp"
+        tools:layout_editor_absoluteY="512dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+        android:layout_width="296dp"
+        android:layout_height="124dp"
+        android:layout_below="@+id/title"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="380dp"
+        android:layout_marginEnd="45dp">
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteIngredientes"
+            android:layout_width="277dp"
+            android:layout_height="84dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:hint="Ingrdientes"
+            android:inputType="none" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+</RelativeLayout>

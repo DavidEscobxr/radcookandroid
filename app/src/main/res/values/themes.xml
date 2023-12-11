@@ -1,0 +1,29 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.RadcookSplash" parent="Theme.Material3.DayNight.NoActionBar">
+
+
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+
+        <item name="colorOnSecondary">@color/colorAccent</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/colorPrimary</item>
+        <!-- Customize your theme here. -->
+
+    </style>
+
+    <style name="Theme.Menulateral" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+
+        <item name="colorOnPrimary">@color/white</item>
+      <!-- Secondary brand color. -->
+
+        <item name="colorOnSecondary">@color/black</item>
+       <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/colorPrimary</item>
+      <!-- Customize your theme here. -->
+        </style>
+
+    <style name="Theme.RadcookSplash" parent="Base.Theme.RadcookSplash" />
+</resources>

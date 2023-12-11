@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ingredient">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Crea Tu Ingrediente"
+        android:textColor="@color/colorPrimary"
+        android:textSize="34sp" />
+
+    <EditText
+        android:id="@+id/nameIngredient"
+        android:layout_width="wrap_content"
+        android:layout_height="64dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="69dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="203dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:hint="Nombre del ingrediente"
+        android:inputType="text"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="248dp" />
+
+    <ImageView
+        android:id="@+id/gifImageView1"
+        android:layout_width="157dp"
+        android:layout_height="166dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="39dp"
+        android:layout_marginBottom="146dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/agucate"
+        tools:ignore="MissingConstraints" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+        android:layout_width="296dp"
+        android:layout_height="124dp"
+        android:layout_below="@+id/title"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="45dp">
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteIngredient"
+            android:layout_width="237dp"
+            android:layout_height="94dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:hint="Tipo De Ingrediente"
+            android:inputType="none" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/crearIngrediente"
+        android:layout_width="147dp"
+        android:layout_height="80dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="226dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="191dp"
+        android:backgroundTint="#009846"
+        android:textColor="@color/colorAccent"
+        android:text="Aceptar"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-52dp"
+        tools:layout_editor_absoluteY="512dp" />
+
+
+</RelativeLayout>

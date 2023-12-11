@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+   <RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShareFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="101dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="86dp"
+        android:layout_marginBottom="640dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="PQRS"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30sp" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="249dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="59dp"
+        android:layout_marginBottom="330dp">
+
+        <AutoCompleteTextView
+            android:id="@+id/autoComplete"
+            android:layout_width="226dp"
+            android:layout_height="73dp"
+            android:layout_marginStart="61dp"
+            android:layout_marginEnd="108dp"
+            android:layout_marginBottom="372dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:hint="Categoria"
+            android:inputType="none" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <EditText
+        android:id="@+id/pqrsText"
+        android:layout_width="300dp"
+        android:layout_height="88dp"
+        android:layout_above="@+id/pqrsButton"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="54dp"
+        android:layout_marginEnd="57dp"
+        android:layout_marginBottom="73dp"
+        android:textColor="@color/colorPrimary"
+        android:fontFamily="@font/poppins_semibold"
+        android:hint="Cuentanos"
+        android:inputType="text"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="248dp"
+        />
+
+    <Button
+        android:id="@+id/pqrsButton"
+        android:layout_width="248dp"
+        android:layout_height="72dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="87dp"
+        android:layout_marginEnd="76dp"
+        android:layout_marginBottom="213dp"
+        android:backgroundTint="#009846"
+        android:textColor="@color/colorAccent"
+        android:text="Enviar"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-52dp"
+        tools:layout_editor_absoluteY="512dp"
+        android:fontFamily="@font/poppins_semibold"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".Forum">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/forumTitle"
+        android:text="Foro"
+        android:textSize="36sp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:textColor="#009648"
+        android:layout_centerHorizontal="true"/>
+
+    <!--ingresar el contenido del comentario -->
+
+
+    <EditText
+        android:id="@+id/editTextComment"
+        android:layout_width="194dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnSendComment"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="115dp"
+        android:layout_marginEnd="101dp"
+        android:layout_marginBottom="58dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:hint="Ingresa tu comentario"
+        android:textColor="@color/colorPrimary" />
+
+    <Button
+        android:id="@+id/btnSendComment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="112dp"
+        android:layout_marginEnd="134dp"
+        android:layout_marginBottom="361dp"
+        android:backgroundTint="#009846"
+        android:textColor="@color/colorAccent"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Enviar comentario" />
+
+
+</RelativeLayout>
